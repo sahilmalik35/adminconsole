@@ -1,0 +1,13 @@
+/* sign-in.component.css */
+.container {
+  max-width: 400px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}

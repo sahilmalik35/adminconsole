@@ -1,0 +1,75 @@
+/* layout.component.css */
+.layout {
+    display: flex;
+  }
+  
+  header {
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 2px -2px gray;
+  }
+  
+  .side-nav {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 56px; /* height of header */
+    padding-top: 1rem;
+    transition: width 0.3s ease;
+  }
+  
+  .side-nav.collapsed {
+    width: 50px;
+  }
+  
+  .content {
+    margin-left: 200px;
+    padding: 20px;
+    padding-top: 80px; /* account for fixed header */
+  }
+  
+  .side-nav.collapsed ~ .content {
+    margin-left: 50px;
+  }
+  
+  .breadcrumb {
+    margin-bottom: 0;
+  }
+  
+  .navbar-dark .breadcrumb-item a {
+    color: #fff;
+  }
+  
+  .nav-item .nav-link {
+    color: #000;
+    padding: 15px 20px;
+  }
+  
+  .nav-item .nav-link:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .admin-console-label {
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-console-label:hover {
+    background-color: #ddd;
+  }
+  
+  .bi-chevron-right, .bi-chevron-down {
+    font-size: 1.2em;
+  }
+  
+  .dropdown-menu {
+    min-width: 250px;
+  }
+  
+  .dropdown-item:hover {
+    cursor: pointer;
+  }
+  
